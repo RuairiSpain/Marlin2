@@ -408,12 +408,21 @@ G29_TYPE GcodeSuite::G29() {
       }
       else {
         probe_position_lf.set(
+<<<<<<< HEAD
           parser.seenval('L') ? RAW_X_POSITION(parser.value_linear_units()) : x_min,
           parser.seenval('F') ? RAW_Y_POSITION(parser.value_linear_units()) : y_min
         );
         probe_position_rb.set(
           parser.seenval('R') ? RAW_X_POSITION(parser.value_linear_units()) : x_max,
           parser.seenval('B') ? RAW_Y_POSITION(parser.value_linear_units()) : y_max
+=======
+          parser.seenval('L') ? (int)RAW_X_POSITION(parser.value_linear_units()) : _MAX(X_CENTER - (X_BED_SIZE) / 2,      x_min),
+          parser.seenval('F') ? (int)RAW_Y_POSITION(parser.value_linear_units()) : _MAX(Y_CENTER - (Y_BED_SIZE) / 2,      y_min)
+        );
+        probe_position_rb.set(
+          parser.seenval('R') ? (int)RAW_X_POSITION(parser.value_linear_units()) : _MIN(probe_position_lf.x + X_BED_SIZE, x_max),
+          parser.seenval('B') ? (int)RAW_Y_POSITION(parser.value_linear_units()) : _MIN(probe_position_lf.y + Y_BED_SIZE, y_max)
+>>>>>>> parent of 1c9ccce... Add NOZZLE_AS_PROBE (no probe offsets) (#15929)
         );
       }
 

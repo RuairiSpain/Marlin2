@@ -59,8 +59,6 @@ void safe_delay(millis_t ms) {
     SERIAL_ECHOLNPGM("Probe: "
       #if ENABLED(PROBE_MANUALLY)
         "PROBE_MANUALLY"
-      #elif ENABLED(NOZZLE_AS_PROBE)
-        "NOZZLE_AS_PROBE"
       #elif ENABLED(FIX_MOUNTED_PROBE)
         "FIX_MOUNTED_PROBE"
       #elif ENABLED(BLTOUCH)
