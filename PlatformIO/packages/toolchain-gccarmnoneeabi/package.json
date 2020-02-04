@@ -1,0 +1,11 @@
+{
+    "description": "gcc-arm-embedded",
+    "name": "toolchain-gccarmnoneeabi",
+    "system": [
+        "windows",
+        "windows_amd64",
+        "windows_x86"
+    ],
+    "url": "https://launchpad.net/gcc-arm-embedded",
+    "version": "1.70201.0"
+}
