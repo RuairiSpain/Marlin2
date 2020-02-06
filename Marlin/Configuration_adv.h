@@ -1473,7 +1473,7 @@
 //#define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
-  //  #define LIN_ADVANCE_K 0.05
+  //  #define LIN_ADVANCE_K 0.00
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
 #endif
 
