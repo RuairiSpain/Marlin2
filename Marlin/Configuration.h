@@ -1215,8 +1215,8 @@
     #define MESH_TEST_NOZZLE_SIZE    0.4  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT 0.3
     #define MESH_TEST_HOTEND_TEMP 220
-    define MESH_TEST_BED_TEMP 70
-    define G26_XY_FEEDRATE 20
+    #define MESH_TEST_BED_TEMP 70
+    #define G26_XY_FEEDRATE 20
   #endif
 
 #endif
