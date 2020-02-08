@@ -1256,7 +1256,7 @@
 
   #define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 60
+  #define MESH_INSET  --59
         #define GRID_MAX_POINTS_X 10
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
@@ -1272,7 +1272,7 @@
   //=================================== Mesh ==================================
   //===========================================================================
 
-  #define MESH_INSET 60
+  #define MESH_INSET  --59
         #define GRID_MAX_POINTS_X 10
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
